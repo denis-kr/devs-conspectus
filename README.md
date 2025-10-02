@@ -1,5 +1,39 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Testes E2E com Cypress (TypeScript + Page Object Model)
+
+### Pré-requisitos
+- Node 18+
+- Aplicação rodando em `http://localhost:3000` (use `npm run dev`)
+
+### Instalação
+As dependências do Cypress já estão no projeto. Caso necessário, rode:
+
+```bash
+npm install
+```
+
+### Scripts
+- `npm run cy:open`: abre o Cypress em modo interativo
+- `npm run cy:run`: executa os testes em modo headless
+
+### Estrutura criada
+- `cypress.config.ts`: configuração do Cypress
+- `cypress/tsconfig.json`: config TypeScript para specs do Cypress
+- `cypress/e2e/home.cy.ts`: teste inicial usando POM
+- `cypress/pages/HomePage.ts`: Page Object da página inicial
+- `cypress/support/e2e.ts` e `cypress/support/commands.ts`: setup e comandos
+
+### Como executar
+1. Em um terminal: `npm run dev`
+2. Em outro terminal:
+   - Modo interativo: `npm run cy:open`
+   - Headless: `npm run cy:run`
+
+### Convenções de POM
+- Crie classes em `cypress/pages/` representando páginas/componentes.
+- Exponha métodos que retornem `cy.get(...)`/`cy.contains(...)` e ações como `visit()`.
+
 ## Getting Started
 
 First, run the development server:
