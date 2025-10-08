@@ -1,0 +1,13 @@
+
+--> Add/Configure Vitest for unit testing
+--> Add/Configure Cypress for e2e + components testing
+--> Setup ci/cd pipeline, linting, tests, prettier
+--> Figure out how I am going to deploy it
+
+--> ask AI what is the best way to organize Next.js project
+--> setup routing for this project
+
+
+
+
+--> update favicon
