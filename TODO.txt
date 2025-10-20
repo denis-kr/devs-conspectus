@@ -11,3 +11,7 @@
 
 
 --> update favicon
+
+--> use brown/gold colors
+
+--> Should I support dark/light theme?
