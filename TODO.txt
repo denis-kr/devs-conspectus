@@ -15,3 +15,5 @@
 --> use brown/gold colors
 
 --> Should I support dark/light theme?
+
+--> maybe lower the right decorator if the main is pretty empty??? looks a bit wierd with sort of empty main
