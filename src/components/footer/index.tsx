@@ -1,4 +1,4 @@
-export default async function Footer() {
+export default function Footer() {
   return (
     <footer className="text-center p-6">
       © {new Date().getFullYear()} Denis Kravchenko. All rights reserved.

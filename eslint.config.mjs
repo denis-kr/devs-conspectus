@@ -20,6 +20,11 @@ const eslintConfig = [
       "next-env.d.ts",
     ],
   },
+  {
+    rules: {
+      "no-console": "error",
+    },
+  },
   ...compat.extends("prettier"),
 ];
 

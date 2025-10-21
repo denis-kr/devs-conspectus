@@ -16,4 +16,6 @@
 
 --> Should I support dark/light theme?
 
+--> TODO customize the 404 page for both global one and for blogs one
+
 --> maybe lower the right decorator if the main is pretty empty??? looks a bit wierd with sort of empty main

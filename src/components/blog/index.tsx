@@ -18,7 +18,7 @@
 //     },
 //   },
 
-type BlogProps = {
+export type BlogProps = {
   description: string;
   title: string;
   href: string;
@@ -27,7 +27,7 @@ type BlogProps = {
   datetime: string;
 };
 
-export default async function Blog({
+export default function Blog({
   description,
   title,
   href,

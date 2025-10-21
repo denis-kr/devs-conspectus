@@ -8,7 +8,7 @@ export default function Home() {
         <div className="relative rounded-full px-3 py-1 text-sm/6 ring-1 ring-white/10 hover:ring-white/20">
           Announcing our next round of funding.{" "}
           {/* TODO prob will ask here to report issue in github I guess */}
-          <a href="#" className="font-semibold text-cta">
+          <a href="#" className="font-semibold text-heading">
             <span aria-hidden="true" className="absolute inset-0" />
             Read more <span aria-hidden="true">&rarr;</span>
           </a>
@@ -27,7 +27,7 @@ export default function Home() {
           {/* //TODO change from a tag to Link */}
           <a
             href="#"
-            className="rounded-md bg-cta px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+            className="rounded-md bg-[#219ebc] text-white px-3.5 py-2.5 text-sm font-semibold shadow-xs hover:bg-[#219ebc] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
           >
             View Blogs
           </a>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default async function Header() {
+export default function Header() {
   return (
     <header className="mb-8 z-10">
       <div className="grid grid-cols-3">
