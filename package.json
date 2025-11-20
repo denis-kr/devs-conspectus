@@ -36,8 +36,8 @@
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx,md,mdx}": [
-      "npm run lint",
-      "npm run format"
+      "pnpm run lint",
+      "pnpm run format"
     ]
   }
 }
