@@ -1,6 +1,7 @@
 //learn about the line below
 import { readFile } from "node:fs/promises";
-// import { notFound } from "next/navigation";
+import { join } from "node:path";
+import { notFound } from "next/navigation";
 //TODo is it too large?
 import Markdown from "react-markdown";
 
@@ -12,21 +13,16 @@ export default async function Blog({
   const { id } = await params;
 
   let content = "";
-
-  //TODO learn how this readFile works, why use utf-8???
-  //TODO probably add error handling??
   try {
-    content = await readFile(`./blogs/${id}.md`, "utf-8");
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    //todo understand how it grabs specifically /blogs/...md
+    const pathToMarkdown = join(".", "blogs", `${id}.md`);
+    content = await readFile(pathToMarkdown, "utf-8");
   } catch (e) {
-    // console.log(e);
-    //TODO add it back
-    // if (e.code === "ENOENT") {
-    //   notFound()
-    // }
+    if (e instanceof Error && "code" in e && e.code === "ENOENT") {
+      notFound();
+    }
+    // console.error("Error reading markdown file:", e);
   }
-
-  // console.log(content, "content");
 
   return <Markdown>{content}</Markdown>;
 }
